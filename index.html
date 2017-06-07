@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+	<title> Tic Tac Toe </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Tic Tac Toe</h1>
+	</header>
+	<div id="container">
+			<p id="intro">Play Tic Tac Toe! Grab a friend, sit down, and play this classic.<br/> Press Reset to clear the 
+		board or start a new game.<br/> The winner will see their shapes turn green!</p>
+			<button id="reset" type="button" onclick="pressReset()">Reset</button>
+	</div>
+		<div id="board">
+			<div id="row_1">
+				<canvas id="box_0" class="box" onclick="pressBox(this.id)" >This is a Tic Tac Toe board. Please use a higher browser to play!</canvas>
+				<canvas id="box_1" class="box" onclick="pressBox(this.id)"></canvas>
+				<canvas id="box_2" class="box" onclick="pressBox(this.id)"></canvas>
+			</div>
+			<div id="row_2">
+				<canvas id="box_3" class="box" onclick="pressBox(this.id)"></canvas>
+				<canvas id="box_4" class="box" onclick="pressBox(this.id)"></canvas>
+				<canvas id="box_5" class="box" onclick="pressBox(this.id)"></canvas>
+			</div>
+			<div id="row_3">
+				<canvas id="box_6" class="box" onclick="pressBox(this.id)"></canvas>
+				<canvas id="box_7" class="box" onclick="pressBox(this.id)"></canvas>
+				<canvas id="box_8" class="box" onclick="pressBox(this.id)"></canvas>
+			</div>
+		</div>
+	<script type="text/javascript" src="ttt.js"></script>
+</body>
+</html>
